@@ -8,5 +8,17 @@
   "devDependencies": {
     "concurrently": "^8.0.1",
     "nodemon": "^2.0.22"
-  }
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server",
+    "expense-tracker": "npm start --prefix expense-tracker",
+    "dev": "concurrently \"npm run server\" \"npm run expense-tracker\" "
+  },
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "expense tracker app",
+  "main": "server.js",
+  "author": "Anusha",
+  "license": "ISC"
 }
